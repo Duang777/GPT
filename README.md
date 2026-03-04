@@ -7,9 +7,9 @@
 <p align="center">ChatGPT 网页增强扩展：会话管理、提示词复用、公式与 Mermaid 处理、导出与备份</p>
 
 <p align="center">
-  <a href="https://github.com/Duang777/GPT/releases/latest">最新版本下载（ZIP）</a> ·
-  <a href="https://duang777.github.io/GPT/">在线网页（前端）</a> ·
-  <a href="https://duang777.github.io/GPT/privacy.html">隐私政策</a>
+  <a href="https://github.com/Duang777/GPT-Voyager/releases/latest">最新版本下载（ZIP）</a> ·
+  <a href="https://duang777.github.io/GPT-Voyager/">在线网页（前端）</a> ·
+  <a href="https://duang777.github.io/GPT-Voyager/privacy.html">隐私政策</a>
 </p>
 
 ## 项目简介
@@ -30,10 +30,10 @@ GPT Voyager 是一个面向 `chatgpt.com` / `chat.openai.com` 的浏览器扩展
 | 导出与备份 | 会话 Markdown/HTML 导出、时间线节点导出、JSON 备份恢复 | 交付、归档、迁移 |
 
 ## 在线入口
-- 在线网页（前端）：<https://duang777.github.io/GPT/>
-- 最新 Release（ZIP）：<https://github.com/Duang777/GPT/releases/latest>
-- 仓库地址：<https://github.com/Duang777/GPT>
-- 隐私政策：<https://duang777.github.io/GPT/privacy.html>
+- 在线网页（前端）：<https://duang777.github.io/GPT-Voyager/>
+- 最新 Release（ZIP）：<https://github.com/Duang777/GPT-Voyager/releases/latest>
+- 仓库地址：<https://github.com/Duang777/GPT-Voyager>
+- 隐私政策：<https://duang777.github.io/GPT-Voyager/privacy.html>
 
 ## 安装使用（用户）
 1. 打开 Releases 下载最新 ZIP。
@@ -94,3 +94,4 @@ npm run package:zip
 
 ### 3. 数据会上传到外部服务器吗？
 核心数据管理与备份流程以本地存储为主，详情见隐私政策页面。
+
