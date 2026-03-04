@@ -1,70 +1,50 @@
-# GPT Voyager（ChatGPT 网页效率扩展）
+﻿<p align="center">
+  <img src="src/icons/icon-128.png" alt="GPT Voyager 图标" width="168" />
+</p>
 
-<img src="src/icons/icon-128.png" alt="GPT Voyager 图标" width="72" />
+<h1 align="center">GPT Voyager</h1>
 
-GPT Voyager 是一个为 `chatgpt.com` / `chat.openai.com` 提供侧边栏工作台的浏览器扩展。  
-它的目标很明确：把会话管理、提示词复用、公式/图表处理、导出与备份放到一个稳定、可复用的工作流里。
+<p align="center">ChatGPT 网页增强扩展：会话管理、提示词复用、公式与 Mermaid 处理、导出与备份</p>
 
-## 下载与入口
-- 在线网页（前端演示）：<https://duang777.github.io/GPT/>
-- 最新版本下载（ZIP）：<https://github.com/Duang777/GPT/releases/latest>
-- 项目仓库：<https://github.com/Duang777/GPT>
-- 隐私政策：<https://duang777.github.io/GPT/privacy.html>
+<p align="center">
+  <a href="https://github.com/Duang777/GPT/releases/latest">最新版本下载（ZIP）</a> ·
+  <a href="https://duang777.github.io/GPT/">在线网页（前端）</a> ·
+  <a href="https://duang777.github.io/GPT/privacy.html">隐私政策</a>
+</p>
 
-## 这个扩展解决什么问题
-- ChatGPT 会话越来越多，原生列表难以检索和整理。
-- 提示词重复输入，变量替换效率低。
-- 技术内容（公式、Mermaid）缺少统一提取与导出能力。
-- 重要会话和结构化数据缺少稳定的本地归档路径。
+## 项目简介
+GPT Voyager 是一个面向 `chatgpt.com` / `chat.openai.com` 的浏览器扩展，提供统一的侧边栏工作台。目标是把高频、重复、易丢失的操作沉淀为稳定流程：
+- 会话组织与检索
+- 提示词模板化复用
+- 公式/Mermaid 技术内容提取与导出
+- 本地可恢复的数据备份体系
 
 ## 核心能力
-### 会话工作台
-- 自动采集可见会话并建立本地索引。
-- 按标题 / 会话 ID / 备注搜索。
-- 文件夹、标签、星标、备注管理。
-- 多选批量操作（批量设文件夹 / 批量加减标签）与撤销。
-- 列表支持排序、卡片密度切换与虚拟滚动。
+| 模块 | 能力 | 典型场景 |
+|---|---|---|
+| 会话工作台 | 索引、搜索、文件夹、标签、星标、备注、多选批量操作 | 历史会话快速归档与定位 |
+| 性能优化 | 虚拟滚动、密度切换、排序能力 | 大量会话下保持流畅 |
+| 提示词库 | 模板管理、变量填充、变量预设、导入导出、批量导出 | 固化高质量提示词流程 |
+| 公式工作台 | 页面公式提取、点击公式复制（Word 优先 / LaTeX 回退）、来源定位 | 技术写作与公式复用 |
+| Mermaid 工作台 | 图表识别、预览、收藏、源码/SVG/HTML 导出 | 结构化图表复用与文档沉淀 |
+| 导出与备份 | 会话 Markdown/HTML 导出、时间线节点导出、JSON 备份恢复 | 交付、归档、迁移 |
 
-### 提示词库
-- 提示词模板增删改查。
-- 变量模板填充（`{{变量名}}`）。
-- 变量预设保存/套用。
-- 模板导入导出与批量导出。
+## 在线入口
+- 在线网页（前端）：<https://duang777.github.io/GPT/>
+- 最新 Release（ZIP）：<https://github.com/Duang777/GPT/releases/latest>
+- 仓库地址：<https://github.com/Duang777/GPT>
+- 隐私政策：<https://duang777.github.io/GPT/privacy.html>
 
-### 技术内容工作台
-- 公式工作台：提取公式、复制 LaTeX、复制 Word 可渲染 MathML、定位来源消息。
-- Mermaid 工作台：识别图表、预览、收藏、源码/SVG/HTML 导出。
+## 安装使用（用户）
+1. 打开 Releases 下载最新 ZIP。
+2. 解压后确认目录中存在 `manifest.json`。
+3. 浏览器打开 `chrome://extensions/`。
+4. 开启“开发者模式”。
+5. 点击“加载已解压的扩展程序”，选择解压目录。
+6. 打开 `https://chatgpt.com/` 即可在页面侧边使用 GPT Voyager。
 
-### 导出与备份
-- 当前会话导出 Markdown / HTML。
-- 时间线节点筛选导出 Markdown / HTML。
-- 本地 JSON 备份导出/导入（会话、分类、提示词、收藏、设置）。
-
-## 安装（给使用者）
-1. 打开 `Releases` 下载最新 ZIP。  
-2. 解压后得到扩展目录（目录内有 `manifest.json`）。  
-3. 打开 `chrome://extensions/`。  
-4. 开启“开发者模式”。  
-5. 点击“加载已解压的扩展程序”，选择解压目录。  
-6. 访问 `https://chatgpt.com/`，右侧即可看到 GPT Voyager。
-
-## 版本发布（给维护者）
-推荐先用 GitHub Release 分发 ZIP（不依赖 Chrome 商店）：
-
-```powershell
-npm run typecheck
-npm run build
-npm run package:zip
-```
-
-执行后会在 `release/` 目录生成 ZIP。  
-将 ZIP 上传到 GitHub Release 后，用户即可通过 `releases/latest` 下载。
-
-自动发布已支持：推送 `v*` 标签会自动构建并上传 ZIP 到 GitHub Release。  
-详见：`docs/store/AUTO_RELEASE_BY_TAG_ZH-CN.md`
-
-## 本地开发
-### 环境
+## 本地开发（开发者）
+### 环境要求
 - Node.js 20+
 - Chrome / Edge（Manifest V3）
 
@@ -73,7 +53,7 @@ npm run package:zip
 npm install
 ```
 
-如果网络较慢（中国大陆）：
+网络较慢时可使用镜像源：
 ```powershell
 npm install --registry=https://registry.npmmirror.com
 ```
@@ -86,7 +66,31 @@ npm run build
 npm run package:zip
 ```
 
-## 文档
-- 功能日志：`docs/FEATURE_LOG.md`
+## 发布流程
+### 手动发布 ZIP
+```powershell
+npm run typecheck
+npm run build
+npm run package:zip
+```
+执行后在 `release/` 目录生成 ZIP，可上传到 GitHub Release。
+
+### 自动发布 ZIP
+仓库已配置 GitHub Actions：推送 `v*` 标签后自动构建并上传 ZIP 到 GitHub Release。
+详见：`docs/store/AUTO_RELEASE_BY_TAG_ZH-CN.md`
+
+## 文档索引
 - 需求文档：`PRD.md`
-- 分发与上架资料：`docs/store/README.md`
+- 开发规范：`AGENT.md`
+- 功能日志：`docs/FEATURE_LOG.md`
+- 分发与上架：`docs/store/README.md`
+
+## 常见问题
+### 1. 为什么推荐 ZIP 分发？
+无需等待商店审核，用户可直接下载并本地加载，适合快速迭代。
+
+### 2. 公式复制到 Word 是如何工作的？
+点击页面公式优先复制可渲染 MathML；若浏览器环境不支持富格式剪贴板，会自动回退到 LaTeX。
+
+### 3. 数据会上传到外部服务器吗？
+核心数据管理与备份流程以本地存储为主，详情见隐私政策页面。

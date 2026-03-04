@@ -54,3 +54,4 @@
 | 2026-03-04 | FEAT-042 | Tag 自动发布 ZIP + README 截图区精简 | chore/docs | N/A | `docs/features/2026-03-04-p1-auto-release-zip-on-tag-and-readme-trim.md` | 推送标签后自动创建 Release 并上传 ZIP，README 去掉占位截图块 |
 | 2026-03-04 | FEAT-043 | README 展示页精简（移除顶部瓶子图并重写说明结构） | docs | N/A | `docs/features/2026-03-04-p1-readme-showcase-cleanup-no-top-bottle.md` | 首页改为纯展示导向文案结构，突出下载与安装路径 |
 | 2026-03-04 | FEAT-044 | README 增加图标与在线网页入口 | docs | N/A | `docs/features/2026-03-04-p1-readme-add-icon-and-site-link.md` | 标题下补充图标展示，并在下载入口区增加前端网页链接 |
+| 2026-03-04 | FEAT-045 | README 专业化重构与大图标展示 | docs | N/A | `docs/features/2026-03-04-p1-readme-professionalization-and-large-icon.md` | 顶部改为大图标并重构为专业项目主页结构，保留在线网页与 Release 入口 |
