@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GPT Voyager 隐私政策" />
+    <title>GPT Voyager 隐私政策</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .legal-wrap {
+        width: min(900px, calc(100% - 1.5rem));
+        margin: 1.2rem auto 2rem;
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        padding: clamp(1rem, 2.6vw, 1.6rem);
+      }
+
+      .legal-wrap h1 {
+        margin: 0 0 0.4rem;
+        font-size: clamp(1.5rem, 3vw, 2.2rem);
+      }
+
+      .legal-wrap h2 {
+        margin: 1.1rem 0 0.45rem;
+        font-size: 1.05rem;
+      }
+
+      .legal-wrap p,
+      .legal-wrap li {
+        color: #4b5563;
+        font-size: 0.95rem;
+      }
+
+      .legal-wrap code {
+        background: #f3f4f6;
+        border-radius: 0.28rem;
+        padding: 0.1rem 0.28rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./index.zh.html" aria-label="返回首页">
+        <span class="brand-mark">GV</span>
+        <span class="brand-text">GPT Voyager</span>
+      </a>
+      <nav class="topnav" aria-label="主导航">
+        <a href="./index.zh.html#screenshots">截图</a>
+        <a href="./index.zh.html#faq">常见问题</a>
+        <a href="./index.zh.html#download">下载</a>
+        <a href="./privacy.html">EN</a>
+      </nav>
+      <a class="btn btn-outline" href="./index.zh.html">返回</a>
+    </header>
+
+    <main class="legal-wrap">
+      <p class="kicker">PRIVACY POLICY</p>
+      <h1>GPT Voyager 隐私政策</h1>
+      <p>最后更新：2026-03-04</p>
+
+      <h2>1. 数据处理原则</h2>
+      <p>
+        GPT Voyager 是一个本地优先（local-first）的浏览器扩展。默认情况下，扩展不会将你的 ChatGPT
+        对话内容、提示词内容或其他业务数据上传到开发者服务器。
+      </p>
+
+      <h2>2. 我们存储哪些数据</h2>
+      <p>扩展仅在浏览器本地存储以下数据，用于提供功能：</p>
+      <ul>
+        <li>会话索引与分类信息（文件夹、标签、星标、备注）</li>
+        <li>提示词模板与变量预设</li>
+        <li>公式/图表收藏、时间线标注</li>
+        <li>用户设置项（如导出格式、快捷键、面板宽度等）</li>
+      </ul>
+
+      <h2>3. 数据存储位置</h2>
+      <p>
+        数据存储于浏览器扩展本地存储（例如 <code>chrome.storage.local</code>）。你可通过扩展内置 JSON
+        备份功能导出/导入数据。
+      </p>
+
+      <h2>4. 网络请求与第三方服务</h2>
+      <p>
+        扩展功能运行于 <code>chatgpt.com</code> / <code>chat.openai.com</code> 页面上下文。除页面自身加载资源外，
+        扩展不主动将用户内容发送到第三方服务。
+      </p>
+
+      <h2>5. 权限说明</h2>
+      <ul>
+        <li><code>storage</code>：用于保存本地设置与功能数据</li>
+        <li>Host 权限：用于在 ChatGPT 页面注入侧边栏能力</li>
+      </ul>
+
+      <h2>6. 用户控制</h2>
+      <ul>
+        <li>可随时删除扩展并清除本地数据</li>
+        <li>可通过导出备份文件或导入 JSON 文件恢复数据</li>
+      </ul>
+
+      <h2>7. 联系方式</h2>
+      <p>
+        如有隐私相关问题，可通过仓库 Issue 联系维护者：
+        <a href="https://github.com/Duang777/GPT" target="_blank" rel="noreferrer">github.com/Duang777/GPT</a>
+      </p>
+    </main>
+  </body>
+</html>

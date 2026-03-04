@@ -75,6 +75,8 @@ body {
 .topnav {
   display: inline-flex;
   gap: 1.1rem;
+  flex-wrap: wrap;
+  row-gap: 0.4rem;
 }
 
 .topnav a {
@@ -282,6 +284,23 @@ main,
 .store-note a {
   color: #111111;
   font-weight: 700;
+}
+
+.store-actions {
+  margin-top: 0.62rem;
+  display: grid;
+  gap: 0.52rem;
+}
+
+.store-quick-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.btn-mini {
+  padding: 0.58rem 0.78rem;
+  font-size: 0.78rem;
 }
 
 .section {
@@ -613,7 +632,12 @@ main,
 
 .download-actions {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.54rem;
+}
+
+.download-actions .btn-primary {
+  grid-column: 1 / -1;
 }
 
 .guide-grid {
@@ -762,6 +786,10 @@ main,
     grid-template-columns: 1fr;
   }
 
+  .download-actions {
+    grid-template-columns: 1fr;
+  }
+
   .guide-grid {
     grid-template-columns: 1fr;
   }
@@ -769,6 +797,10 @@ main,
 
 @media (max-width: 660px) {
   .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .store-quick-links {
     grid-template-columns: 1fr;
   }
 
